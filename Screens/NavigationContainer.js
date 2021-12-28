@@ -7,7 +7,7 @@ import { createNavigationContainerRef } from '@react-navigation/native';
 const NavigationContainer = () => {
   const shop = createNavigationContainerRef();
   const store = useSelector(state => state.Auth.userId);
-
+  // new
   useEffect(() => {
     if (!store)
       if (shop.isReady()) {
